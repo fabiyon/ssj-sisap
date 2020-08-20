@@ -113,7 +113,6 @@ public:
   float avgProbePrefixLength;
   float avgIndexPrefixLength;
   float avgNumIndexEntries;
-  double grouping_duration;     // unsigned long long
   double indexing_duration;     // unsigned long long
   double filtering_duration;    // unsigned long long
   double verification_duration; // unsigned long long
@@ -125,7 +124,6 @@ public:
     this->avgProbePrefixLength = 0;
     this->avgIndexPrefixLength = 0;
     this->avgNumIndexEntries = 0;
-    this->grouping_duration = 0;
     this->indexing_duration = 0;
     this->filtering_duration = 0;
     this->verification_duration = 0;

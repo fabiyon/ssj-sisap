@@ -67,8 +67,6 @@ void PrintStatistics() {
        << endl;
   cout << endl;
   cout << "PHASE TIME STATS" << endl;
-  cout << "\tGrouping Time..............: " << (double)stats->grouping_duration
-       << endl; 
   cout << "\tIndexing Time..............: " << (double)stats->indexing_duration
        << endl; 
   cout << "\tFiltering Time.............: " << (double)stats->filtering_duration
@@ -85,7 +83,7 @@ void PrintStatistics() {
   cout << "\t# Candidates...............: " << numCandidates << endl;
   cout << "\t# Results..................: " << numResults << endl;
   cout << "\tCPU Time (sec).............: "
-       << (double)(stats->grouping_duration + stats->indexing_duration +
+       << (double)(stats->indexing_duration +
                    stats->filtering_duration + stats->verification_duration)
        << endl;
   cout << "\tTotal Duration.............: " << total_duration / 1000.0 << endl;
